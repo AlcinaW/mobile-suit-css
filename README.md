@@ -1,2 +1,4 @@
-# mobile-suit-css-grids
-JS and CSS Grids experiments
+# mobile-suit-css
+Web design and language experiments 
+
+1. 

@@ -11,3 +11,4 @@ Readings:
 [Understanding Logical Properties And Values](https://www.smashingmagazine.com/2018/03/understanding-logical-properties-values/) by Rachel Andrew   
 [CSS Logical Properties](https://adrianroselli.com/2019/11/css-logical-properties.html) by Adrian Roselli  
 [RTL Styling 101](https://www.rtlstyling.com/posts/rtl-styling/) by Ahmad Shadeed  
+[CSS for internationalisation](https://chenhuijing.com/blog/css-for-i18n/#%F0%9F%8E%B9) by Chen Hui Jing

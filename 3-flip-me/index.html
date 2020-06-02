@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hiragana & Katakana Adventures</title>
+    <style>
+        /* :root { */
+        /* Do not set a font-size on a :root, body nor html level */
+        /* Let your main text size be decided by the browser or the user settings */
+        /* https://css-tricks.com/accessible-font-sizing-explained/ */
+        /* } */
+
+        :lang(en) {
+            color: #414141;
+            border-bottom: .5rem solid transparent;
+        }
+
+        :lang(ja) {
+            color: olive;
+            border-bottom: .5rem solid pink;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .copy__hiragana-ja,
+        .copy__katakana-ja {
+            display: none;
+        }
+
+        .copy__change-swap {
+            display: none;
+        }
+
+        .copy__change-show {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I'll be <span class="copy copy__hiragana">hiragana</span><span class="copy-ja copy__hiragana-ja"
+            lang="ja">ひらがな</span>
+        and you'll be <span class="copy copy__katakana">katakana</span><span class="copy-ja copy__katakana-ja"
+            lang="ja">カタカナ</span>.</h1>
+
+    <button type="button" class="copy__change">Change it up!</button>
+
+    <script>
+        document.addEventListener('click', function (event) {
+
+            if (!event.target.matches('.copy__change')) return;
+
+            console.log(event.target);
+
+            let englist = document.getElementsByClassName("copy");
+            for (let item of englist) {
+                item.classList.toggle("copy__change-swap");
+            }
+
+            let jalist = document.getElementsByClassName("copy-ja");
+            for (let item of jalist) {
+                item.classList.toggle("copy__change-show");
+            }
+
+        }, false);
+
+    </script>
+
+</body>
+
+</html>

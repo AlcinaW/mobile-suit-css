@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -7,29 +7,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <title>Fun with Grid</title>
     <style>
+        :lang(ja) {
+            font-family: 'Kosugi Maru', sans-serif;
+        }
+
+        :lang(en) {
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
         @supports (display: grid) {
-            div {
+            h1 {
                 display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-gap: 10px;
+                grid-auto-rows: minmax(100px, auto);
+            }
+
+            .one {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .two {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .three {
+                grid-column: 3;
+                grid-row: 3;
+            }
+
+            .four {
+                grid-column: 4;
+                grid-row: 4;
+            }
+
+            .five {
+                grid-column: 5;
+                grid-row: 5;
+            }
+
+            .six {
+                grid-column: 6;
+                grid-row: 6;
             }
         }
 
         /* @supports not (display: grid) {
             div {
-                float: right;
+                display: flex;
             }
         } */
     </style>
 </head>
 
-<h1>
-    <span>カ</span>
-    <span>ナ</span>
-    <span>ダ</span>
-    <span>の</span>
-    <span>四</span>
-    <span>季</span>
+<h1 class="container">
+    <span class="one">カ</span>
+    <span class="two">ナ</span>
+    <span class="three">ダ</span>
+    <span class="four">の</span>
+    <span class="five">四</span>
+    <span class="six">季</span>
+    <span class="icon">🍃</span>
+    <span class="icon">🌸</span>
+    <span class="icon">🌞</span>
+    <span class="icon">☃️</span>
 </h1>
-<h2>An introduction</h2>
+<h2 lang="en">An introduction</h2>
 
 <body>
 

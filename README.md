@@ -5,7 +5,7 @@ Web design and language experiments
 2. Moon gazing with [text-orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation) and [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
 3. Changing it up with [identifying in-document language changes](https://www.w3.org/International/techniques/authoring-html#indoclang)
 4. 4 seasons with CSS Grid 
-5. 
+5. 4 seasons with CSS Grid 2 
 
 Readings:  
 [Building Multi-Directional Layouts](https://css-tricks.com/building-multi-directional-layouts/) by Ahmad El-Alfy  

@@ -23,6 +23,11 @@
             --white: hsl(0, 0%, 96%);
             --transparent: rgba(255, 255, 255, 0);
 
+            --link-text: hsl(198.5, 100%, 25.5%);
+            --link-underline: hsl(198.5, 100%, 20.5%);
+            --link-gradient-right: hsl(198.6, 100%, 40.6%);
+            --link-gradient-left: hsl(213.6, 100%, 40.6%);
+
             --border-radius: .15em;
         }
 
@@ -51,6 +56,41 @@
 
         .kaomoji-group {
             margin-bottom: .25em;
+        }
+
+        a,
+        a:visited {
+            text-decoration: underline;
+            color: var(--link-text);
+            text-decoration-color: var(--link-underline);
+            border: .1em solid var(--transparent);
+        }
+
+        a:hover {
+            background: linear-gradient(90deg, var(--link-gradient-right), var(--link-gradient-left));
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            box-decoration-break: clone;
+            text-shadow: none;
+            text-decoration: underline;
+            text-decoration-color: var(--link-gradient-right);
+        }
+
+        a:focus {
+            background: linear-gradient(90deg, var(--link-gradient-right), var(--link-gradient-left));
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            box-decoration-break: clone;
+            text-shadow: none;
+            text-decoration: underline;
+            text-decoration-color: var(--link-gradient-right);
+            border: .1em solid var(--indigo);
+        }
+
+        a:active {
+            border: .1em solid var(--deep-indigo);
         }
 
         /* Animation */

@@ -49,6 +49,10 @@
             line-height: 1.2;
         }
 
+        .kaomoji-group {
+            margin-bottom: .25em;
+        }
+
         /* Animation */
         /* Based on this Codepen: https://codepen.io/aardrian/pen/ENJdjN */
         @keyframes tooltip {
@@ -79,19 +83,6 @@
                 outline-offset: 1em;
                 outline-width: .5em;
                 outline-color: var(--transparent);
-            }
-        }
-
-        :target {
-            outline-width: .15em;
-            outline-style: solid;
-            outline-color: var(--indigo);
-        }
-
-        @media screen and (prefers-reduced-motion: no-preference) {
-            :target {
-                outline-width: 0;
-                animation: target 2s ease-out 1;
             }
         }
 
@@ -152,8 +143,18 @@
             border-radius: var(--border-radius);
         }
 
-        .kaomoji-group {
-            margin-bottom: .25em;
+        /* Focus style for anchor skip */
+        :target {
+            outline-width: .15em;
+            outline-style: solid;
+            outline-color: var(--indigo);
+        }
+
+        @media screen and (prefers-reduced-motion: no-preference) {
+            :target {
+                outline-width: 0;
+                animation: target 2s ease-out 1;
+            }
         }
     </style>
 </head>

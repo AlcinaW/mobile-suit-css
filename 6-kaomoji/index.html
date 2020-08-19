@@ -17,6 +17,13 @@
             /* 20px */
             --font-size--large: 2.4rem;
             /* 24px */
+            --indigo: hsl(280, 20%, 48%);
+            --deep-indigo: hsl(280, 100%, 5%);
+
+            --white: hsl(0, 0%, 96%);
+            --transparent: rgba(255, 255, 255, 0);
+
+            --border-radius: .15em;
         }
 
         .font-size--small {
@@ -36,26 +43,25 @@
         }
 
         body {
-            font-size: 130%;
+            font-size: var(--font-size--default);
+            /* font-size: 130%; */
         }
 
-        /* The animation */
         /* Based on this Codepen: https://codepen.io/aardrian/pen/ENJdjN */
-        @keyframes TOOLTIP {
+        @keyframes tooltip {
             from {
                 bottom: .5em;
-                background-color: rgba(0, 0, 0, 0);
-                border: .05em solid rgba(255, 255, 255, 0);
-                color: rgba(255, 255, 255, 0);
-                box-shadow: 0 0 0 rgba(0, 0, 0, 1);
+                background-color: var(--indigo);
+                border: .05em solid var(--transparent);
+                color: var(--transparent);
+                box-shadow: none;
             }
 
             to {
                 bottom: 1.5em;
-                background-color: rgba(0, 0, 0, .85);
-                border: .05em solid rgba(255, 255, 255, 1);
-                color: rgba(255, 255, 255, 1);
-                box-shadow: .15em .15em .5em rgba(0, 0, 0, 1);
+                background-color: var(--deep-indigo);
+                color: var(--white);
+                box-shadow: none;
             }
         }
 
@@ -72,16 +78,52 @@
             z-index: 1;
             bottom: 1.5em;
             left: 0;
-            max-width: 5em;
+            max-width: 7em;
             padding: .5em .75em;
-            border: .05em solid rgba(255, 255, 255, 1);
+            border: .05em solid var(--white);
             border-radius: .2em;
-            box-shadow: .15em .15em .5em rgba(0, 0, 0, 1);
+            box-shadow: none;
             content: attr(aria-label);
-            background-color: rgba(0, 0, 0, .85);
-            color: rgba(255, 255, 255, 1);
+            background-color: var(--deep-indigo);
+            color: var(--white);
             font-size: 80%;
-            animation: TOOLTIP .1s ease-out 1;
+            animation: tooltip .1s ease-out 1;
+        }
+
+        button {
+            font-size: var(--font-size--default);
+            cursor: pointer;
+            display: inline-block;
+            border: none;
+            padding: .4em;
+            margin: 0;
+            text-decoration: none;
+            background: var(--indigo);
+            color: var(--white);
+            text-align: center;
+            transition: background 200ms ease-in-out, transform 150ms ease;
+            border-radius: var(--border-radius);
+        }
+
+        button:hover,
+        button:focus {
+            background: var(--deep-indigo);
+            border-radius: var(--border-radius);
+        }
+
+        button:focus {
+            outline: .1em solid var(--white);
+            outline-offset: -5px;
+            border-radius: var(--border-radius);
+        }
+
+        button:active {
+            transform: scale(0.99);
+            border-radius: var(--border-radius);
+        }
+
+        .kaomoji-group {
+            margin-bottom: .25em;
         }
     </style>
 </head>
@@ -123,7 +165,7 @@
         <a name="skipkaomoji"></a>
         <section>
             <h2 class="font-size--medium">Kaomoji with aria-label</h2>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Embarrassed or shy" class="copy-kaomoji" tabindex="0">
                     (&#xFFE3;&#x25BD;&#xFFE3;*)&#x309E;
                 </span>
@@ -131,7 +173,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </article>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Blushing" class="copy-kaomoji" tabindex="0">
                     (&#x2044; &#x2044;&#x2022;&#x2044;&#x3C9;&#x2044;&#x2022;&#x2044; &#x2044;)
                 </span>
@@ -139,7 +181,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </article>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Determined or excited" tabindex="0">
                     &#xFF3C;&#xFF3C;&#x669;(&#xE51;&#x60;^&#xB4;&#xE51;)&#x6F6;&#xFF0F;&#xFF0F;
                 </span>
@@ -147,7 +189,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </article>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Shocked and horrified" tabindex="0">
                     &#xFF3C;(&#xBA; &#x25A1; &#xBA; l|l)/
                 </span>
@@ -155,7 +197,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </article>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Excited or sly" tabindex="0">
                     &#x30FE;(=&#x60;&#x3C9;&#xB4;=)&#x30CE;&#x201D;
                 </span>
@@ -163,7 +205,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </article>
-            <div class="kaomoji group">
+            <div class="kaomoji-group">
                 <span role="img" aria-label="Picks up and flips a table upside-down in rage" tabindex="0">
                     (&#x256E;&#xB0;-&#xB0;)&#x256E;&#x2533;&#x2501;&#x2501;&#x2533; (
                     &#x256F;&#xB0;&#x25A1;&#xB0;)&#x256F; &#x253B;&#x2501;&#x2501;&#x253B;
@@ -172,7 +214,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </div>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Flying very fast to a destination with determination" tabindex="0">
                     &#x2500;=&#x2261;&#x3A3;(((&#x3064;&#x2022;&#x300;&#x3C9;&#x2022;&#x301;)&#x3064;&#xFF65;&#xFF9F;
                 </span>
@@ -180,7 +222,7 @@
                 <button type="button" class="copy-html">Copy kaomoji and <abbr
                         title="HyperText Markup Language">HTML</abbr></button>
             </article>
-            <article class="kaomoji group">
+            <article class="kaomoji-group">
                 <span role="img" aria-label="Serving some hot and relaxing tea" tabindex="0">
                     (&#x3000;&#x2019;&#x3C9;&#x2019;)&#x65E6;~~
                 </span>

@@ -6,7 +6,7 @@ Web design and language experiments
 3. Changing it up with [identifying in-document language changes](https://www.w3.org/International/techniques/authoring-html#indoclang)
 4. 4 seasons with CSS Grid 
 5. 4 seasons with CSS Grid 2 
-6. Copy that kaomoji (HTML, JS) - Based on [Accessible emoji](https://tink.uk/accessible-emoji/), [Accessible Emoji, Tweaked](https://adrianroselli.com/2016/12/accessible-emoji-tweaked.html)
+6. Copy that kaomoji (HTML, JS) - [Demo](https://codepen.io/AlcinaW/full/jOqMGYZ), Based on [Accessible emoji](https://tink.uk/accessible-emoji/), [Accessible Emoji, Tweaked](https://adrianroselli.com/2016/12/accessible-emoji-tweaked.html)
 
 Readings:  
 [Building Multi-Directional Layouts](https://css-tricks.com/building-multi-directional-layouts/) by Ahmad El-Alfy  

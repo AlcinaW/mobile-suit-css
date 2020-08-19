@@ -86,92 +86,127 @@
         <h1>Kaomoji party!</h1>
     </header>
     <main>
-        <article>
+        <section>
             <h2>Emoji with aria-label</h2>
             <p> Do you wanna build a <span role="img" aria-label="Snowman" tabindex="0">&#9731;</span>?
             </p>
+        </section>
+        <section>
             <h2>Kaomoji without aria-label</h2>
             <p>Kaomoji (<span lang="ja">顔文字</span>) is a popular Japanese emoticon style made up of Japanese characters
                 and grammar punctuations, and are used to express emotion in texting and cyber communication. </p>
             <a href="#skipkaomoji">Skip ASCII kaomoji characters</a>
             <p>
-                <span>(￣▽￣*)ゞ</span><br />
-                <span>(⁄ ⁄•⁄ω⁄•⁄ ⁄)</span><br />
-                <span>＼＼٩(๑`^´๑)۶／／ </span><br />
-                <span>＼(º □ º l|l)/ </span><br />
-                <span>ヾ(=`ω´=)ノ” </span><br />
-                <span>(╮°-°)╮┳━━┳ ( ╯°□°)╯ ┻━━┻</span><br />
-                <span>─=≡Σ(((つ•̀ω•́)つ･ﾟ </span><br />
-                <span>(　’ω’)旦~~</span><br />
+                <span>(￣▽￣*)ゞ</span>
+                <span>(⁄ ⁄•⁄ω⁄•⁄ ⁄)</span>
+                <span>＼＼٩(๑`^´๑)۶／／ </span>
+                <span>＼(º □ º l|l)/ </span>
+                <span>ヾ(=`ω´=)ノ” </span>
+                <span>(╮°-°)╮┳━━┳ ( ╯°□°)╯ ┻━━┻</span>
+                <span>─=≡Σ(((つ•̀ω•́)つ･ﾟ </span>
+                <span>(　’ω’)旦~~</span>
             </p>
             <a name="skipkaomoji"></a>
+        </section>
+        <section>
             <h2>Kaomoji with aria-label</h2>
-            <ul id="kaomoji">
-                <li>
-                    <span role="img" aria-label="Embarrassed or shy" class="copy-kaomoji" tabindex="0">
-                        (&#xFFE3;&#x25BD;&#xFFE3;*)&#x309E;
-                    </span> <button type="button" class="copy-button">Copy</button>
-                </li>
-                <li>
-                    <span role="img" aria-label="Blushing" class="copy-kaomoji" tabindex="0">
-                        (&#x2044; &#x2044;&#x2022;&#x2044;&#x3C9;&#x2044;&#x2022;&#x2044; &#x2044;)
-                    </span> <button type="button" class="copy-button">Copy</button>
-                </li>
-                <li>
-                    <span role="img" aria-label="Determined or excited" tabindex="0">
-                        &#xFF3C;&#xFF3C;&#x669;(&#xE51;&#x60;^&#xB4;&#xE51;)&#x6F6;&#xFF0F;&#xFF0F;
-                    </span>
-                </li>
-                <li>
-                    <span role="img" aria-label="Shocked and horrified" tabindex="0">
-                        &#xFF3C;(&#xBA; &#x25A1; &#xBA; l|l)/
-                    </span>
-                </li>
-                <li>
-                    <span role="img" aria-label="Excited or sly" tabindex="0">
-                        &#x30FE;(=&#x60;&#x3C9;&#xB4;=)&#x30CE;&#x201D;
-                    </span>
-                </li>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Embarrassed or shy" class="copy-kaomoji" tabindex="0">
+                    (&#xFFE3;&#x25BD;&#xFFE3;*)&#x309E;
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Blushing" class="copy-kaomoji" tabindex="0">
+                    (&#x2044; &#x2044;&#x2022;&#x2044;&#x3C9;&#x2044;&#x2022;&#x2044; &#x2044;)
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Determined or excited" tabindex="0">
+                    &#xFF3C;&#xFF3C;&#x669;(&#xE51;&#x60;^&#xB4;&#xE51;)&#x6F6;&#xFF0F;&#xFF0F;
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Shocked and horrified" tabindex="0">
+                    &#xFF3C;(&#xBA; &#x25A1; &#xBA; l|l)/
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Excited or sly" tabindex="0">
+                    &#x30FE;(=&#x60;&#x3C9;&#xB4;=)&#x30CE;&#x201D;
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
+            <div class="kaomoji group">
+                <span role="img" aria-label="Picks up and flips a table upside-down in rage" tabindex="0">
+                    (&#x256E;&#xB0;-&#xB0;)&#x256E;&#x2533;&#x2501;&#x2501;&#x2533; (
+                    &#x256F;&#xB0;&#x25A1;&#xB0;)&#x256F; &#x253B;&#x2501;&#x2501;&#x253B;
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </div>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Flying very fast to a destination with determination" tabindex="0">
+                    &#x2500;=&#x2261;&#x3A3;(((&#x3064;&#x2022;&#x300;&#x3C9;&#x2022;&#x301;)&#x3064;&#xFF65;&#xFF9F;
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
+            <article class="kaomoji group">
+                <span role="img" aria-label="Serving you relaxing tea" tabindex="0">
+                    (&#x3000;&#x2019;&#x3C9;&#x2019;)&#x65E6;~~
+                </span>
+                <button type="button" class="copy-button">Copy kaomoji</button>
+                <button type="button" class="copy-html">Copy kaomoji and <abbr
+                        title="HyperText Markup Language">HTML</abbr></button>
+            </article>
 
-                <li>
-                    <span role="img" aria-label="Picks up and flips a table upside-down in rage" tabindex="0">
-                        (&#x256E;&#xB0;-&#xB0;)&#x256E;&#x2533;&#x2501;&#x2501;&#x2533; (
-                        &#x256F;&#xB0;&#x25A1;&#xB0;)&#x256F; &#x253B;&#x2501;&#x2501;&#x253B;
-                    </span>
-                </li>
-                <li>
-                    <span role="img" aria-label="Flying very fast to a destination with determination" tabindex="0">
-                        &#x2500;=&#x2261;&#x3A3;(((&#x3064;&#x2022;&#x300;&#x3C9;&#x2022;&#x301;)&#x3064;&#xFF65;&#xFF9F;
-                    </span>
-                </li>
-                <li>
-                    <span role="img" aria-label="Serving you relaxing tea" tabindex="0">
-                        (&#x3000;&#x2019;&#x3C9;&#x2019;)&#x65E6;~~
-                    </span>
-                </li>
-            </ul>
-
-
-        </article>
+        </section>
     </main>
 
     <script>
-        const buttons = document.querySelectorAll('.copy-button');
+        document.addEventListener('click', function (event) {
 
-        buttons.forEach(button => {
-            button.addEventListener('click', event => {
-                let copiedText = button.previousElementSibling.innerText;
-                console.log(copiedText);
+            if (event.target.matches('.copy-button')) {
+                let copiedText = event.target.previousElementSibling.innerText;
 
                 navigator.clipboard.writeText(copiedText)
                     .then(() => {
-                        console.log('Text copied to clipboard' + copiedText);
+                        console.log(`Text copied to clipboard: ${copiedText}`);
+                    })
+                    .catch(err => {
+                        console.error('Could not copy text!', err);
+                    });
+            }
+
+            if (event.target.matches('.copy-html')) {
+                let copiedHTML = event.target.previousElementSibling.previousElementSibling.outerHTML;
+
+                navigator.clipboard.writeText(copiedHTML)
+                    .then(() => {
+                        console.log(`Text copied to clipboard: ${copiedHTML}`);
                     })
                     .catch(err => {
                         console.error('Could not copy text: ', err);
                     });
-            });
-        });
+            }
+        }, false);
+
     </script>
 
 </body>

@@ -45,8 +45,11 @@
         body {
             font-size: var(--font-size--default);
             /* font-size: 130%; */
+            text-rendering: optimizeLegibility;
+            line-height: 1.2;
         }
 
+        /* Animation */
         /* Based on this Codepen: https://codepen.io/aardrian/pen/ENJdjN */
         @keyframes tooltip {
             from {
@@ -62,6 +65,33 @@
                 background-color: var(--deep-indigo);
                 color: var(--white);
                 box-shadow: none;
+            }
+        }
+
+        @keyframes target {
+            from {
+                outline-offset: -.2em;
+                outline-color: var(--indigo);
+                outline-width: .2em;
+            }
+
+            to {
+                outline-offset: 1em;
+                outline-width: .5em;
+                outline-color: var(--transparent);
+            }
+        }
+
+        :target {
+            outline-width: .15em;
+            outline-style: solid;
+            outline-color: var(--indigo);
+        }
+
+        @media screen and (prefers-reduced-motion: no-preference) {
+            :target {
+                outline-width: 0;
+                animation: target 2s ease-out 1;
             }
         }
 
@@ -162,9 +192,8 @@
             </p>
 
         </section>
-        <a name="skipkaomoji"></a>
         <section>
-            <h2 class="font-size--medium">Kaomoji with aria-label</h2>
+            <h2 class="font-size--medium" id="skipkaomoji">Kaomoji with aria-label</h2>
             <article class="kaomoji-group">
                 <span role="img" aria-label="Embarrassed or shy" class="copy-kaomoji" tabindex="0">
                     (&#xFFE3;&#x25BD;&#xFFE3;*)&#x309E;

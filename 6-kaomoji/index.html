@@ -13,6 +13,8 @@
             /* 14px */
             --font-size--default: 1.6rem;
             /* 16px */
+            --font-size--medium: 2rem;
+            /* 20px */
             --font-size--large: 2.4rem;
             /* 24px */
         }
@@ -23,6 +25,10 @@
 
         .font-size--default {
             font-size: var(--font-size--default);
+        }
+
+        .font-size--medium {
+            font-size: var(--font-size--medium);
         }
 
         .font-size--large {
@@ -54,7 +60,6 @@
         }
 
         /* Style for the tool-tip */
-
         span[role=img][aria-label],
         span[role=img][aria-label] {
             position: relative;
@@ -83,16 +88,24 @@
 
 <body>
     <header>
-        <h1>Kaomoji party!</h1>
+        <h1 class="font-size--large">Kaomoji party!</h1>
+        <small class=".font-size--small">An experiment in kaomoji</small>
+        <!--
+            Why <small>?: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small
+            You can also try these: https://css-tricks.com/html-for-subheadings-and-headings/
+            https://www.w3.org/TR/dpub-aria-1.0/#doc-subtitle
+            https://adrianroselli.com/2020/08/be-wary-of-doc-subtitle.html
+
+        -->
     </header>
     <main>
         <section>
-            <h2>Emoji with aria-label</h2>
+            <h2 class="font-size--medium">Emoji with aria-label</h2>
             <p> Do you wanna build a <span role="img" aria-label="Snowman" tabindex="0">&#9731;</span>?
             </p>
         </section>
         <section>
-            <h2>Kaomoji without aria-label</h2>
+            <h2 class="font-size--medium">Kaomoji without aria-label</h2>
             <p>Kaomoji (<span lang="ja">顔文字</span>) is a popular Japanese emoticon style made up of Japanese characters
                 and grammar punctuations, and are used to express emotion in texting and cyber communication. </p>
             <a href="#skipkaomoji">Skip ASCII kaomoji characters</a>
@@ -109,7 +122,7 @@
             <a name="skipkaomoji"></a>
         </section>
         <section>
-            <h2>Kaomoji with aria-label</h2>
+            <h2 class="font-size--medium">Kaomoji with aria-label</h2>
             <article class="kaomoji group">
                 <span role="img" aria-label="Embarrassed or shy" class="copy-kaomoji" tabindex="0">
                     (&#xFFE3;&#x25BD;&#xFFE3;*)&#x309E;

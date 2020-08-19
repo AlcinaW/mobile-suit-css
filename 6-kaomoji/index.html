@@ -166,6 +166,13 @@
             border-radius: var(--border-radius);
         }
 
+        button:active {
+            transform: scale(0.99);
+            border-radius: var(--border-radius);
+            outline: .1em solid var(--indigo);
+            outline-offset: 2px;
+        }
+
         button:hover,
         button:focus {
             background: var(--deep-indigo);
@@ -175,11 +182,6 @@
         button:focus {
             outline: .1em solid var(--white);
             outline-offset: -5px;
-            border-radius: var(--border-radius);
-        }
-
-        button:active {
-            transform: scale(0.99);
             border-radius: var(--border-radius);
         }
 

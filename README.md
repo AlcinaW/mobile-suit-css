@@ -16,6 +16,9 @@ Readings:
 [RTL Styling 101](https://www.rtlstyling.com/posts/rtl-styling/) by Ahmad Shadeed  
 [CSS for internationalisation](https://chenhuijing.com/blog/css-for-i18n/#%F0%9F%8E%B9) by Chen Hui Jing
 [Accessible Web Sites - Google Books excerpt](https://books.google.ca/books?id=FkcnCgAAQBAJ&pg=PA49&lpg=PA49&dq=japanese+katakana+accessibility&source=bl&ots=sKq_GlCzVD&sig=ACfU3U2B-nv-HiCT4NMDydj1dnDhyzc1Kw&hl=en&sa=X&ved=2ahUKEwjWroi98uPpAhXPVs0KHQJgBZMQ6AEwDnoECAgQAQ#v=onepage&q=japanese%20katakana%20accessibility&f=false)
+[CSS Masters Talk - CSS Masters Talk - Adam Argyle](https://youtu.be/zOZju-Z6J2M?t=2146)
+[New CSS Logical Properties!](https://medium.com/@elad/new-css-logical-properties-bc6945311ce7) and [Why CSS Logical Properties Aren’t Ready for Use!](https://medium.com/@elad/why-css-logical-properties-arent-ready-for-use-c102925a5cba) by Elad Shechter
 
 [Declaring language in HTML](https://www.w3.org/International/tutorials/language-decl/) from W3C
 [Working with language in HTML (tutorial)](https://www.w3.org/International/tutorials/language-decl/) from W3C
+[CSS Triggers](https://csstriggers.com)

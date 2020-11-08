@@ -25,3 +25,5 @@ Readings:
 - [Working with language in HTML (tutorial)](https://www.w3.org/International/tutorials/language-decl/) from W3C
 - [CSS Triggers](https://csstriggers.com)
 - [Internationalization And Localization For Static Sites](https://www.smashingmagazine.com/2020/11/internationalization-localization-static-sites/) by Sam Richard
+- [CSS Logical Properties and Values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties)
+- [Logical layout enhancements with flow-relative shorthands](https://web.dev/logical-property-shorthands/)
